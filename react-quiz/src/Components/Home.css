@@ -1,0 +1,40 @@
+.center, header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+}
+
+header{    
+    width:100%;
+    color:white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width:150rem;
+    align-items: center;
+}
+.input-name{
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+}
+input {
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    border-bottom: thin solid #ccc;
+    background: transparent;
+    font-size: 30px;
+    color:white;
+}
+.submit-name{
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    font-size: 30px;
+}
