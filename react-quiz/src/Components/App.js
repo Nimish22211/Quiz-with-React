@@ -73,9 +73,7 @@ function App() {
           </div>
         </div> : null}
       </div>
-      {/* <div id="glass2">hello</div> */}
       <main>
-
         <div id="glass2">
         </div>
       </main>
