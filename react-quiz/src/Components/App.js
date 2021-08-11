@@ -10,7 +10,7 @@ const Ques = [
     option2: ['This is option 2', 2],
     option3: ['This is option 3', 3],
     option4: ['This is option 4', 4],
-    correct: 'option1',
+    correct: 'This is answer 1',
   },
   {
     question: 'This is question 2',
@@ -19,7 +19,7 @@ const Ques = [
     option2: 'This is option 2',
     option3: 'This is option 3',
     option4: 'This is option 4',
-    correct: 'option1',
+    correct: 'This is answer 2',
   },
   {
     question: 'This is question 3',
@@ -28,7 +28,7 @@ const Ques = [
     option2: 'This is option 2',
     option3: 'This is option 3',
     option4: 'This is option 4',
-    correct: 'option1',
+    correct: 'This is answer 3',
   },
   {
     question: 'This is question 4',
@@ -37,7 +37,7 @@ const Ques = [
     option2: 'This is option 2',
     option3: 'This is option 3',
     option4: 'This is option 4',
-    correct: 'option1',
+    correct: 'This is answer 4',
   },
   {
     question: 'This is question 5',
@@ -46,7 +46,7 @@ const Ques = [
     option2: 'This is option 2',
     option3: 'This is option 3',
     option4: 'This is option 4',
-    correct: 'option1',
+    correct: 'This is question 5',
   }
 ]
 
