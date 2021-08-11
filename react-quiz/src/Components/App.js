@@ -5,48 +5,48 @@ import './App.css'
 const Ques = [
   {
     question: 'This is question 1',
-    answer: 'This is answer 1',
-    option1: ['This is option 1', 1],
-    option2: ['This is option 2', 2],
-    option3: ['This is option 3', 3],
-    option4: ['This is option 4', 4],
-    correct: 'This is answer 1',
+    answerOptions: [
+      { option: 'This is option 1', correct: true, id: 1 },
+      { option: 'This is option 2', correct: false, id: 2 },
+      { option: 'This is option 3', correct: false, id: 3 },
+      { option: 'This is option 4', correct: false, id: 4 }
+    ],
   },
   {
     question: 'This is question 2',
-    answer: 'This is answer 2',
-    option1: 'This is option 1',
-    option2: 'This is option 2',
-    option3: 'This is option 3',
-    option4: 'This is option 4',
-    correct: 'This is answer 2',
+    answerOptions: [
+      { option: 'This is option 1', correct: false, id: 1 },
+      { option: 'This is option 2', correct: true, id: 2 },
+      { option: 'This is option 3', correct: false, id: 3 },
+      { option: 'This is option 4', correct: false, id: 4 }
+    ]
   },
   {
     question: 'This is question 3',
-    answer: 'This is answer 3',
-    option1: 'This is option 1',
-    option2: 'This is option 2',
-    option3: 'This is option 3',
-    option4: 'This is option 4',
-    correct: 'This is answer 3',
+    answerOptions: [
+      { option: 'This is option 1', correct: false, id: 1 },
+      { option: 'This is option 2', correct: false, id: 2 },
+      { option: 'This is option 3', correct: true, id: 3 },
+      { option: 'This is option 4', correct: false, id: 4 }
+    ]
   },
   {
     question: 'This is question 4',
-    answer: 'This is answer 4',
-    option1: 'This is option 1',
-    option2: 'This is option 2',
-    option3: 'This is option 3',
-    option4: 'This is option 4',
-    correct: 'This is answer 4',
+    answerOptions: [
+      { option: 'This is option 1', correct: false, id: 1 },
+      { option: 'This is option 2', correct: false, id: 2 },
+      { option: 'This is option 3', correct: false, id: 3 },
+      { option: 'This is option 4', correct: true, id: 4 }
+    ]
   },
   {
     question: 'This is question 5',
-    answer: 'This is answer 5',
-    option1: 'This is option 1',
-    option2: 'This is option 2',
-    option3: 'This is option 3',
-    option4: 'This is option 4',
-    correct: 'This is question 5',
+    answerOptions: [
+      { option: 'This is option 1', correct: true, id: 1 },
+      { option: 'This is option 2', correct: false, id: 2 },
+      { option: 'This is option 3', correct: false, id: 3 },
+      { option: 'This is option 4', correct: false, id: 4 }
+    ]
   }
 ]
 
@@ -74,14 +74,17 @@ function App() {
             <div className="quesNo">Q{queNo}.{Ques[0].question}</div>
           </div>
           <div className="options">
-            <button onClick={() => optionClick(Ques[0].option1[1])}
+            {/* <button onClick={() => optionClick(Ques[0].option1[1])}
               className="option" id="1">{Ques[0].option1[0]}</button><br />
             <button onClick={() => optionClick(Ques[0].option2[1])}
               className="option" id="2">{Ques[0].option2[0]}</button><br />
             <button onClick={() => optionClick(Ques[0].option3[1])}
               className="option" id="3">{Ques[0].option3[0]}</button><br />
             <button onClick={() => optionClick(Ques[0].option4[1])}
-              className="option" id="4">{Ques[0].option4[0]}</button>
+              className="option" id="4">{Ques[0].option4[0]}</button> */}
+
+            {Ques[0].answerOptions.map(item => <div>
+              <button onClick={() => optionClick(item.id)} className="option" id={item.id}>{item.option}</button></div>)}
           </div>
         </div> : null}
       </div>
