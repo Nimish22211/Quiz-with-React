@@ -83,3 +83,41 @@ main{
 .option:hover{
     background:rgb(51, 51, 51)
 }
+.next, .reset{
+    font-size: 2rem;
+    align-self: flex-end;
+    margin-right: 4rem;
+    padding: 10px;
+    margin-top: 10px;
+    display:none;
+    border-radius: 10%;
+    background-color: tomato;
+    color:white;
+    cursor: pointer;
+}
+.reset{
+    display: block;
+    margin-top: 5rem;
+    align-self: center;
+    margin-left: 5rem;
+}
+.score{
+    z-index: 10;
+}
+.endscreen{
+    position: fixed;
+    backdrop-filter: blur(5rem);
+    border-radius: 20px;
+    /* background-color:#131010 ; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    min-width: 50vw;
+    width:auto;
+    height:60vh;
+    position: fixed;
+    left:25%;
+    flex-direction: column;
+}
