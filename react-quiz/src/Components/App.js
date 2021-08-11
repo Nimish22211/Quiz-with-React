@@ -74,15 +74,6 @@ function App() {
             <div className="quesNo">Q{queNo}.{Ques[0].question}</div>
           </div>
           <div className="options">
-            {/* <button onClick={() => optionClick(Ques[0].option1[1])}
-              className="option" id="1">{Ques[0].option1[0]}</button><br />
-            <button onClick={() => optionClick(Ques[0].option2[1])}
-              className="option" id="2">{Ques[0].option2[0]}</button><br />
-            <button onClick={() => optionClick(Ques[0].option3[1])}
-              className="option" id="3">{Ques[0].option3[0]}</button><br />
-            <button onClick={() => optionClick(Ques[0].option4[1])}
-              className="option" id="4">{Ques[0].option4[0]}</button> */}
-
             {Ques[0].answerOptions.map(item => <div>
               <button onClick={() => optionClick(item.id)} className="option" id={item.id}>{item.option}</button></div>)}
           </div>
