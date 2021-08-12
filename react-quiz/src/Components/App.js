@@ -4,48 +4,48 @@ import './App.css'
 
 const Ques = [
   {
-    question: 'This is question 1',
+    question: 'Html is which type of language?',
     answerOptions: [
-      { option: 'This is option 1', correct: true, id: 1 },
-      { option: 'This is option 2', correct: false, id: 2 },
-      { option: 'This is option 3', correct: false, id: 3 },
-      { option: 'This is option 4', correct: false, id: 4 }
+      { option: 'It is a programming language', correct: false, id: 1 },
+      { option: 'It is a markup language', correct: true, id: 2 },
+      { option: 'It is a functional programming language', correct: false, id: 3 },
+      { option: 'None of the above', correct: false, id: 4 }
     ],
   },
   {
-    question: 'This is question 2',
+    question: 'In Javascript what does this mean "="',
     answerOptions: [
-      { option: 'que2 option 1', correct: false, id: 1 },
-      { option: 'que2 option 2', correct: true, id: 2 },
-      { option: 'que2 option 3', correct: false, id: 3 },
-      { option: 'que2 option 4', correct: false, id: 4 }
+      { option: 'Equal operator', correct: false, id: 1 },
+      { option: 'Assignment operator', correct: true, id: 2 },
+      { option: 'Boolean', correct: false, id: 3 },
+      { option: 'None of the above', correct: false, id: 4 }
     ]
   },
   {
-    question: 'This is question 3',
+    question: '%, is called modulus, what does it do?',
     answerOptions: [
-      { option: 'que3 option 1', correct: false, id: 1 },
-      { option: 'que3 option 2', correct: false, id: 2 },
-      { option: 'que3 option 3', correct: true, id: 3 },
-      { option: 'que3 option 4', correct: false, id: 4 }
+      { option: 'Finds %', correct: false, id: 1 },
+      { option: 'Divides the numbers', correct: false, id: 2 },
+      { option: 'Finds the remainder', correct: true, id: 3 },
+      { option: 'None of the above', correct: false, id: 4 }
     ]
   },
   {
-    question: 'This is question 4',
+    question: 'What is the meaning of boolean value?',
     answerOptions: [
-      { option: 'que4 option 1', correct: false, id: 1 },
-      { option: 'que4 option 2', correct: false, id: 2 },
-      { option: 'que4 option 3', correct: false, id: 3 },
-      { option: 'que4 option 4', correct: true, id: 4 }
+      { option: 'True', correct: false, id: 1 },
+      { option: 'False', correct: false, id: 2 },
+      { option: 'True/False', correct: true, id: 3 },
+      { option: 'None of the above', correct: false, id: 4 }
     ]
   },
   {
-    question: 'This is question 5',
+    question: 'when something is written in quotes - "Hello!", Which data type is it? ',
     answerOptions: [
-      { option: 'que5 option 1', correct: true, id: 1 },
-      { option: 'que5 option 2', correct: false, id: 2 },
-      { option: 'que5 option 3', correct: false, id: 3 },
-      { option: 'que5 option 4', correct: false, id: 4 }
+      { option: 'String', correct: true, id: 1 },
+      { option: 'Array', correct: false, id: 2 },
+      { option: 'Object', correct: false, id: 3 },
+      { option: 'None of the above', correct: false, id: 4 }
     ]
   }
 ]
@@ -60,7 +60,6 @@ function App() {
   const [btnId, setBtnId] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [scoreDesc, setScoreDesc] = useState('');
-  // console.log(userName)
   const ids = [1, 2, 3, 4]; //? reference for ids
   //* optionClick will also check whether answer is correct or not
   const optionClick = (id, optSelect) => { //* it will disable other options which are not selected 
